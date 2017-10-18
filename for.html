@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript - Adivinhe!</title>
+</head>
+<body>    
+
+    <div id="tweetDiv"></div>
+
+    <script type="text/javascript">
+
+        var tweetString = "";
+
+        var tweets = ["Hi everyone!", "I'm hungry!", "Good morning!", "Drown!"];
+
+        for(var i = 0; i < tweets.length; i++) {
+
+            tweetString = tweetString + "<p>" + tweets[i] + "</p>";
+
+        }
+
+        document.getElementById("tweetDiv").innerHTML = tweetString;
+
+    </script>
+
+</body>
+</html>
