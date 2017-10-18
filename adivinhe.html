@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript - Adivinhe!</title>
+</head>
+<body>    
+
+    <p>Quantos dedos estão levantados?</p>
+
+    <p><input type="text" id="enteredNum"></p>
+
+    <p><button id="checkNum">OK</button></p>
+
+    <script type="text/javascript">
+
+        document.getElementById("checkNum").onclick = function() {
+
+            var randomNum = Math.floor(Math.random() * 5) + 1;
+
+            var numEntered = document.getElementById("enteredNum").value;
+
+            if (numEntered == randomNum) {
+
+                alert("Você ganhou!!!");
+
+            } else {
+
+                alert("Não foi dessa vez... Tente de novo!");
+
+            }
+
+        }
+
+    </script>
+
+</body>
+</html>
